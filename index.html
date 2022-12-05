@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Cleve's Portfolio</title>
+</head>
+<body>
+  <nav class="bg-gray-100 border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+      <a href="index.html" class="flex items-center">
+        <img src="./assets/images/logo(3).png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+        <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Hardcastle Design</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-xl md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#"
+              class="hover:scale-110 block py-2 pl-3 pr-4 text-white bg-violet-700 rounded md:bg-transparent md:text-violet-700 md:p-0 dark:text-white"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#"
+              class="hover:scale-110 block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Work</a>
+          </li>
+          <li>
+            <a href="#"
+              class="hover:scale-110 block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+          </li>
+          <li>
+            <a href="#contact"
+              class="hover:scale-110 block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-violet-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li class="active"><a href="index.html"
+            class="block text-sm px-2 py-4 text-white bg-violet-300 font-semibold">Home</a></li>
+        <li><a href="#" class="block text-sm px-2 py-4 hover:bg-violet-300 transition duration-300">Work</a></li>
+        <li><a href="#" class="block text-sm px-2 py-4 hover:bg-violet-300 transition duration-300">About</a></li>
+        <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-violet-300 transition duration-300">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      const btn = document.querySelector("button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+    
+  </nav>
+
+    <div class="m-1 mb-2 grid grid-row lg:grid-cols-2">
+      <div class="flex mb-2 md:mb-0">
+        <div class="m-auto grid grid-row-2">
+          <h3 class="text-3xl m-2">Click here to see my work</h3>
+          <a class="flex justify-center items-center" href=""></a>
+            <button class="bg-violet-300 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded-full">
+              Get Started
+            </button>
+          </a>
+        </div>
+      </div>
+      <img class="w-full" src="./assets/images/clement-helardot-95YRwf6CNw8-unsplash.jpg"/>
+    </div>
+
+    <div class="m-1 mb-2 grid grid-row lg:grid-cols-2">
+      <img class="w-full" src="./assets/images/john-schnobrich-FlPc9_VocJ4-unsplash.jpg"/>
+      <div class="flex md:mb-0">
+        <div class="m-auto grid grid-row-2">
+          <h3 class="text-3xl m-2 text-center">Click here to learn more about me</h3>
+          <a href=""></a>
+            <button class="bg-violet-300 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded-full">
+              About
+            </button>
+        </div>
+      </div>
+    </div> 
+
+    <div id="contact" class="m-1 grid grid-row lg:grid-cols-2">
+      <div class="flex">
+        <div class="m-auto">
+          <h2 class="text-3xl">Connect with me on the following:
+            <ul class="list-disc list-inside">
+              <li><a class="text-violet-300" href="https://github.com/CleveHardcastle">GitHub</a></li>
+              <li><a class="text-violet-300" href="">LinkedIn</a></li>
+            </ul>
+          </h2>
+        </div>
+      </div>
+      <img class="w-full" src="./assets/images/nordwood-themes-yyMJNPgQ-X8-unsplash.jpg"/>
+    </div>
+
+</body>
+</html>
